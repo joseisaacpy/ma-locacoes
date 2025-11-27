@@ -14,11 +14,6 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "M.A Locações",
   description: "Portfólio de serviços e produtos para a empresa M.A Locações.",
-  // icons: {
-  //   icon: "",
-  //   shortcut: "",
-  //   apple: "",
-  // },
 };
 
 export default function RootLayout({
