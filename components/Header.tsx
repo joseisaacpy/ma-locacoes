@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { linksNavigation } from "@/utils/linksNavigation";
+import { linksNavigation } from "@/data/linksNavigation";
 
 export default function Header() {
   return (
