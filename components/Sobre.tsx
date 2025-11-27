@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/animation/fade-in";
 
 export default function Sobre() {
   return (
@@ -8,43 +11,86 @@ export default function Sobre() {
       className="min-h-screen w-full max-w-6xl p-4 mx-auto flex flex-col md:flex-row items-center justify-center gap-4"
     >
       {/* image */}
-      <Image
-        src="/assets/images/hero.jpg"
-        alt="Sobre a M.A Locações"
-        width={500}
-        height={500}
-        className="rounded-md"
-      />
+      <motion.div
+        variants={fadeIn}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        <Image
+          src="/assets/images/sobre.webp"
+          alt="Sobre a M.A Locações"
+          width={500}
+          height={500}
+          className="rounded-md"
+        />
+      </motion.div>
 
       {/* content */}
       <div>
-        <h1 className="text-4xl font-bold text-white">
+        <motion.h1
+          variants={fadeIn}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="text-4xl font-bold text-white"
+        >
           Conheça mais sobre a M.A
-        </h1>
-        <p className="text-white max-w-2xl mt-2">
+        </motion.h1>
+        <motion.p
+          variants={fadeIn}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="text-white max-w-2xl mt-2"
+        >
           A M.a Locações e Serviços, fundada em Teresina, Piauí, por Marcos
           Paulo Rodrigues da Silva em outubro de 2023, nasceu para ser sua
           parceira em construções e reformas.
-        </p>
-        <h2 className="text-2xl font-semibold text-white mt-4">
+        </motion.p>
+        <motion.h2
+          variants={fadeIn}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="text-2xl font-semibold text-white mt-4"
+        >
           Nosso Compromisso:
-        </h2>
+        </motion.h2>
         {/* Novo H2 para destaque */}
         <ul className="text-white max-w-2xl mt-2 list-disc list-inside space-y-2">
           {/* Lista para maior clareza */}
-          <li>
+          <motion.li
+            variants={fadeIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
             Foco Principal: Fornecer máquinas e equipamentos de construção em
             excelente estado para locação (sem operador).
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={fadeIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
             Qualidade Garantida: Investimos em um inventário de alta qualidade e
             com manutenção rigorosa, pois sabemos que o sucesso da sua obra
             depende de ferramentas confiáveis.
-          </li>
+          </motion.li>
         </ul>
-        <Button variant={"secondary"} className="mt-6">
-          Entre em contato
-        </Button>
+        <motion.button
+          variants={fadeIn}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: false }}
+          className="mt-6"
+        >
+          <Button asChild variant="secondary">
+            <span>Entre em contato</span>
+          </Button>
+        </motion.button>
       </div>
     </section>
   );
