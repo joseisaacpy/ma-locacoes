@@ -8,7 +8,7 @@ export default function Sobre() {
   return (
     <section
       id="sobre"
-      className="min-h-screen w-full max-w-6xl p-4 mx-auto flex flex-col md:flex-row items-center justify-center gap-4"
+      className="min-h-screen w-full p-4 mx-auto flex flex-col md:flex-row items-center justify-center gap-4 bg-linear-to-b from-blue-default to-black"
     >
       {/* image */}
       <motion.div
@@ -20,8 +20,8 @@ export default function Sobre() {
         <Image
           src="/assets/images/sobre.webp"
           alt="Sobre a M.A Locações"
-          width={500}
-          height={500}
+          width={600}
+          height={600}
           className="rounded-md"
         />
       </motion.div>
@@ -88,7 +88,15 @@ export default function Sobre() {
           className="mt-6"
         >
           <Button asChild variant="secondary">
-            <span>Entre em contato</span>
+            <span className="flex items-center justify-center gap-2">
+              Entre em contato{" "}
+              <Image
+                src="/assets/images/whatsapp-color.svg"
+                alt="Ícone do Whatsapp"
+                width={20}
+                height={20}
+              />
+            </span>
           </Button>
         </motion.button>
       </div>
