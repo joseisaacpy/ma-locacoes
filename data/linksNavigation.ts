@@ -1,4 +1,3 @@
-// imports
 import { NavLink } from "@/types/link";
 import { FiHome, FiShoppingBag, FiInfo, FiBriefcase } from "react-icons/fi";
 
