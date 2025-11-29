@@ -1,7 +1,7 @@
-import Header from "@/components/Header";
-import Hero from "@/components/sections/Hero";
-import Sobre from "@/components/sections/Sobre";
-import Produtos from "@/components/sections/SectionProdutos";
+import Header from "@/components/header/Header";
+import Hero from "@/components/sections/HeroSection";
+import Sobre from "@/components/sections/AboutSection";
+import Produtos from "@/components/sections/ProductsSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
