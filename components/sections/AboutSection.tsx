@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/fade-in";
 
-export default function Sobre() {
+export default function AboutSection() {
   return (
     <section
       id="sobre"
@@ -82,7 +82,7 @@ export default function Sobre() {
           </motion.li>
         </ul>
         {/* nav de rede sociais */}
-        <nav aria-label="Redes Sociais">
+        <nav aria-label="Redes Sociais" className="flex gap-2">
           <motion.button
             variants={fadeIn}
             initial="initial"

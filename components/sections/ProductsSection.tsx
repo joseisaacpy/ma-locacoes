@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeSlide } from "@/animation/fade-slide";
 import { produtos } from "@/data/produtos";
 
-export default function SectionProdutos() {
+export default function ProductsSection() {
   return (
     <section
       id="produtos"
