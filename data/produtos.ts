@@ -4,7 +4,8 @@ export const produtos: Produto[] = [
   {
     id: 1,
     nome: "Andaime Metálico",
-    descricao: "Estrutura modular para trabalhos em altura, resistente e segura.",
+    descricao:
+      "Estrutura modular para trabalhos em altura, resistente e segura.",
     imagemPath: "/assets/images/hero.webp",
   },
   {
@@ -22,13 +23,13 @@ export const produtos: Produto[] = [
   {
     id: 4,
     nome: "Betoneira 400L",
-    descricao: "Equipamento ideal para preparar concreto em obras pequenas e médias.",
+    descricao: "Ideal para preparar concreto em obras.",
     imagemPath: "/assets/images/hero.webp",
   },
   {
     id: 5,
     nome: "Compactador de Solo (Sapo)",
-    descricao: "Perfeito para compactação de terra em valas, pavimentações e fundações.",
+    descricao: "Indicado para compactação de solo em valas e bases.",
     imagemPath: "/assets/images/hero.webp",
   },
 ];
