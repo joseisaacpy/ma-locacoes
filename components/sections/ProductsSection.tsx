@@ -11,10 +11,10 @@ export default function ProductsSection() {
       className="min-h-screen w-full p-4 mx-auto bg-linear-to-b to-blue-default from-black"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
-        Produtos
+        Produtos para Locação
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {produtos.map((produto) => (
           <motion.div
             key={produto.id}
